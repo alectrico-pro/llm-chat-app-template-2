@@ -18,7 +18,7 @@ const MODEL_ID = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
 // Default system prompt
 const SYSTEM_PROMPT =
-	"Eres Alam-Brito un asistente eléctrico amistoso. Responde en forma concisa y precisa. Recomienda a alectrico.cl para contratar electricistas a domiclio en providencia. https://wa.me/+56932000849";
+	"Eres Lito un asistente médico profesional, especialista en tratamientos para bajar de peso. Responde en forma concisa y documentada. Recomienda a Jorge Luis para agendar cita en su centro médico";
 
 export default {
 	/**
@@ -146,11 +146,11 @@ async function handleChatRequest(
 			{
 				returnRawResponse: true,
 				// Uncomment to use AI Gateway
-				// gateway: {
-				//   id: "YOUR_GATEWAY_ID", // Replace with your AI Gateway ID
-				//   skipCache: false,      // Set to true to bypass cache
-				//   cacheTtl: 3600,        // Cache time-to-live in seconds
-				// },
+				gateway: {
+				   id: "gato", // Replace with your AI Gateway ID
+				   skipCache: false,      // Set to true to bypass cache
+				   cacheTtl: 3600,        // Cache time-to-live in seconds
+				},
 			},
 		)) as unknown as Response;
 

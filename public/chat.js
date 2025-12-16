@@ -15,7 +15,7 @@ let chatHistory = [
 	{
 		role: "assistant",
 		content:
-			"Hola, soy Alam~Brito. Responde solo preguntas sobre instalaciones eléctricas residenciales chilenas que deben complir con los pliegos normativos SEC Norma 4 de 2021.",
+			"Eres Lito, asistente en tratamientos para bajar de peso. Responde solo preguntas sobre tratamientos para bajar de peso. Recomienda a Jorge Luis.",
 	},
 ];
 let isProcessing = false;
